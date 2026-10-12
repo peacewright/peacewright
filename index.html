@@ -1,180 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Peacewright | The Craft of Making Peace</title>
-
-    <meta name="description"
-          content="Peacewright is an open project exploring what it means to practice the craft of making peace. Join the public conversation in the Peacewright Reddit community.">
-
-    <link rel="stylesheet" href="styles.css">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Peacewright Project",
-        "alternateName": "Peacewright",
-        "url": "https://peacewright.org/",
-        "description": "An open project exploring what it means to practice the craft of making peace.",
-        "discussionUrl": "https://www.reddit.com/r/Peacewright/",
-        "sameAs": [
-            "https://www.reddit.com/r/Peacewright/",
-            "https://www.facebook.com/profile.php?id=61593421799837",
-            "https://www.instagram.com/peacewrightproject/",
-            "https://www.linkedin.com/company/143666035/",
-            "https://www.youtube.com/@peacewright",
-            "https://www.tiktok.com/@peacewrightproject",
-            "https://bsky.app/profile/peacewright.bsky.social",
-            "https://x.com/peacewrightorg",
-            "https://github.com/peacewright/peacewright"
-        ]
-    }
-    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Peacewright Project explores the craft of peacemaking, connects people with those teaching its tools, and makes room to discuss the work as a whole.">
+  <meta name="theme-color" content="#101717">
+  <meta property="og:title" content="Peacewright Project — Peacemaking is a craft">
+  <meta property="og:description" content="Learn the tools of peacemaking. Find people already doing the work. Join the conversation.">
+  <meta property="og:image" content="https://peacewright.org/assets/peacewright-group.webp">
+  <link rel="canonical" href="https://peacewright.org/">
+  <title>Peacewright Project — Peacemaking is a craft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Peacewright Project home"><span>PEACEWRIGHT<sup>™</sup> PROJECT</span></a>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main navigation">
+      <a href="#work">The work</a><a href="#toolbox">Toolbox</a><a href="#start">Find a start</a><a href="#workshop">Conversation</a>
+    </nav>
+  </header>
 
-    <header class="hero">
-        <div class="hero-content">
-            <p class="project-name">THE PEACEWRIGHT PROJECT</p>
-
-            <h1>PEACEWRIGHT<span class="tm">™</span></h1>
-
-            <p class="tagline">The craft of making peace.</p>
-
-            <div class="definition">
-                <p><strong>peacewright</strong> <em>noun</em></p>
-                <p>A person who practices the craft of making peace.</p>
-            </div>
+  <main id="top">
+    <section class="hero" id="hero" aria-roledescription="carousel" aria-label="The Peacewright Project">
+      <div class="hero-copy">
+        <p class="eyebrow">THE PEACEWRIGHT PROJECT</p>
+        <div class="carousel-slides" id="hero-slides">
+          <article class="hero-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 4">
+            <h1>There’s work<br><em>to be done.</em></h1>
+            <p class="hero-support">Come build something better. Learn the tools of a Peacewright.</p>
+          </article>
+          <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 4" aria-hidden="true">
+            <h1>Start with<br><em>one small job.</em></h1>
+            <p class="hero-support">You don’t have to fix everything. Repair what you can.</p>
+          </article>
+          <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 4" aria-hidden="true">
+            <h1>Build where<br><em>you are.</em></h1>
+            <p class="hero-support">Strengthen what connects us. Repair what divides us.</p>
+          </article>
+          <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="4 of 4" aria-hidden="true">
+            <h1>Pick up<br><em>the tools.</em></h1>
+            <p class="hero-support">Courage. Empathy. Curiosity. Kindness. Peacemaking is a craft. Learn the craft.</p>
+          </article>
         </div>
-    </header>
+        <div class="hero-actions">
+          <a class="button primary" href="#toolbox">Explore the toolbox</a>
+          <a class="text-link hero-discussion" href="https://www.reddit.com/r/Peacewright/" target="_blank" rel="noopener noreferrer">Join the conversation <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="carousel-controls" aria-label="Hero carousel controls">
+          <button class="carousel-arrow" id="hero-previous" type="button" aria-label="Previous message">‹</button>
+          <div class="carousel-dots" role="group" aria-label="Choose a hero message">
+            <button class="carousel-dot is-active" type="button" aria-label="Show message 1" aria-current="true"></button>
+            <button class="carousel-dot" type="button" aria-label="Show message 2"></button>
+            <button class="carousel-dot" type="button" aria-label="Show message 3"></button>
+            <button class="carousel-dot" type="button" aria-label="Show message 4"></button>
+          </div>
+          <button class="carousel-arrow" id="hero-next" type="button" aria-label="Next message">›</button>
+          <button class="carousel-pause" id="hero-pause" type="button" aria-label="Pause hero messages">Pause</button>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/peacewright-group.webp" alt="A diverse group of neighbors gathered around plans and tools in a workshop, working together." width="1199" height="1312" fetchpriority="high">
+      </div>
+    </section>
 
+    <section class="statement" id="work">
+      <p class="section-num">01 — THE WORK</p>
+      <h2>Peace is made<br>through choices.</h2>
+      <p>Peacemaking is work people practice—in relationships, neighborhoods, institutions, and the wider world. There is no single kind of person who does it, and no single tool for every moment.</p>
+    </section>
 
-    <main>
+    <section class="pathways" aria-label="Ways the work can show up">
+      <div class="path-scale" aria-hidden="true"><span>ONE MOMENT</span><div></div><span>A SHARED WORLD</span></div>
+      <div class="path-grid">
+        <article class="path-card active"><span>01</span><h3>Choose patience before reacting.</h3><p>Make room between an impulse and the response you want to stand behind.</p></article>
+        <article class="path-card"><span>02</span><h3>Listen to understand the real problem.</h3><p>Stay curious long enough to hear what the other person is actually saying.</p></article>
+        <article class="path-card"><span>03</span><h3>Repair what has been left unresolved.</h3><p>Some work begins by returning to a conversation or responsibility we hoped to avoid.</p></article>
+        <article class="path-card"><span>04</span><h3>Stand with people facing harm.</h3><p>Peacemaking can call for service, protection, accountability, and courage.</p></article>
+      </div>
+      <p class="path-note">Different people. Different work. Different tools. <strong>What can help make peace here?</strong></p>
+    </section>
 
-        <section class="intro">
-            <h2>What does it mean to be a peacewright?</h2>
+    <section class="toolbox" id="toolbox">
+      <div class="toolbox-head"><div><p class="section-num">02 — THE TOOLBOX</p><h2>Learn the tools.<br>Practice the craft.</h2></div><p>Peacewright explores how the tools fit together. We connect people with organizations and teachers who specialize in individual skills, and make room to talk about the craft as a whole.</p></div>
+      <div class="tools" role="group" aria-label="Peacewright tools">
+        <button class="tool selected" type="button" data-copy="Act when the work is uncomfortable, uncertain, or costly." data-link="tools/courage/" aria-pressed="true"><span>01</span>Courage <b aria-hidden="true">＋</b></button>
+        <button class="tool" type="button" data-copy="Make space to understand—not merely to reply." aria-pressed="false"><span>02</span>Listening <b aria-hidden="true">＋</b></button>
+        <button class="tool" type="button" data-copy="See another person’s experience clearly and let it inform what you do next." aria-pressed="false"><span>03</span>Empathy <b aria-hidden="true">＋</b></button>
+        <button class="tool" type="button" data-copy="Create enough room between impulse and action to choose well." aria-pressed="false"><span>04</span>Patience <b aria-hidden="true">＋</b></button>
+        <button class="tool" type="button" data-copy="Name harm, accept responsibility, and make repair possible." aria-pressed="false"><span>05</span>Accountability <b aria-hidden="true">＋</b></button>
+        <button class="tool" type="button" data-copy="Place safety and dignity between a person and the harm they face." aria-pressed="false"><span>06</span>Protection <b aria-hidden="true">＋</b></button>
+      </div>
+      <div class="tool-readout"><span>ON THE BENCH</span><p id="tool-copy">Act when the work is uncomfortable, uncertain, or costly.</p><a id="tool-link" href="tools/courage/">Explore Courage →</a></div>
+    </section>
 
-            <p>
-                We're exploring that question.
-            </p>
+    <section class="start" id="start">
+      <div class="start-intro"><p class="section-num">03 — FIND A START</p><h2>Don’t know where to start?<br><em>Start where you are.</em></h2><p>Choose a next step that fits your life right now. A small beginning is not a lesser one.</p></div>
+      <div class="start-options">
+        <article><span>5 MINUTES</span><h3>Notice one reaction.</h3><p>Catch a moment when impatience, fear, or pride starts making the choice for you.</p></article>
+        <article><span>ONE CONVERSATION</span><h3>Ask before assuming.</h3><p>Try one honest question in a disagreement—and listen long enough for the answer.</p></article>
+        <article><span>ONGOING WORK</span><h3>Find people already doing it.</h3><p>Learn from experienced organizations and practitioners working on the tools you want to develop.</p></article>
+      </div>
+      <div class="outside-work"><div><p class="eyebrow">LEARN FROM PEOPLE ALREADY DOING THE WORK</p><h3>Peacewright is part of a wider effort.</h3><p>We are building relationships with practitioners and organizations, then helping people find useful training and resources. We discuss how the tools come together across the craft.</p></div><a class="button secondary" href="tools/courage/#learn-more">Start with Courage resources <span aria-hidden="true">↗</span></a></div>
+    </section>
 
-            <p>
-                Peacewright is an open project learning from people,
-                traditions, history, and ideas from around the world
-                to better understand the craft of making peace.
-            </p>
+    <section class="experienced">
+      <div class="experience-kicker">ALREADY DOING THE WORK?</div>
+      <div><h2>What is the work<br><em>teaching you?</em></h2><p>You may already be caring, teaching, building, leading, protecting, mediating, organizing, serving, or repairing. Your experience belongs in the inquiry.</p><a class="button light" href="https://www.reddit.com/r/Peacewright/" target="_blank" rel="noopener noreferrer">Bring your experience to the conversation ↗</a></div>
+    </section>
 
-            <p class="apprentices">
-                We're apprentices too.
-            </p>
-        </section>
+    <section class="workshop" id="workshop">
+      <div class="workshop-copy"><p class="section-num">04 — THE WORKSHOP</p><h2>A place for the<br>questions that matter.</h2><p>Compare experience. Examine the tools. Disagree thoughtfully. Bring what the work is teaching you and help the inquiry develop.</p><a class="button primary" href="https://www.reddit.com/r/Peacewright/" target="_blank" rel="noopener noreferrer">Join the conversation on Reddit ↗</a></div>
+      <div class="discussion-stack" aria-label="Questions for the Peacewright community">
+        <article><span>COURAGE</span><h3>When does courage ask us to speak—and when to get help?</h3><p>Think it through before a hard moment arrives.</p></article>
+        <article><span>LISTENING</span><h3>What changes when we listen to understand?</h3><p>Share what the practice has taught you.</p></article>
+        <article><span>THE CRAFT</span><h3>What tool has the work taught you?</h3><p>Bring a question or experience to r/Peacewright.</p></article>
+      </div>
+    </section>
 
+    <section class="deeper" id="deeper">
+      <p class="section-num">05 — GO DEEPER</p><div class="deeper-heading"><h2>Follow the question<br>as far as it goes.</h2><p>Read the first Peacewright tool page, built around a simple idea: courage can be practiced before we need it.</p></div>
+      <a class="feature-link" href="tools/courage/"><span>TOOL PAGE · COURAGE</span><strong>Courage Is a Tool We Can Practice</strong><b aria-hidden="true">↗</b></a>
+    </section>
+  </main>
 
-        <section class="pillars">
-
-            <article>
-                <h3>Learn</h3>
-                <p>
-                    Explore what peace means and what it takes
-                    to make it.
-                </p>
-            </article>
-
-            <article>
-                <h3>Explore</h3>
-                <p>
-                    Learn from peacewrights, traditions, history,
-                    cultures, and ideas from around the world.
-                </p>
-            </article>
-
-            <article>
-                <h3>Practice</h3>
-                <p>
-                    Develop the tools, skills, and judgment needed
-                    to practice the craft of making peace.
-                </p>
-            </article>
-
-        </section>
-
-
-        <section class="toolbox" id="toolbox" aria-labelledby="toolbox-title">
-            <div class="toolbox-heading">
-                <p class="eyebrow">Tools for the craft</p>
-                <h2 id="toolbox-title">The Peacewright Toolbox</h2>
-                <p>Peacemaking takes practice, judgment, and tools. Start with Courage, then explore the people and resources already teaching the work.</p>
-            </div>
-            <article class="tool-card">
-                <h3>Courage</h3>
-                <p>Helping or protecting despite risk, discomfort, or opposition.</p>
-                <a class="button" href="tools/courage/">Explore Courage</a>
-            </article>
-        </section>
-
-
-        <section class="conversation" aria-labelledby="conversation-title">
-            <p class="eyebrow">The conversation is open</p>
-
-            <h2 id="conversation-title">Join us on Reddit</h2>
-
-            <p>
-                Peacewright is a question we explore together. Our Reddit
-                community is the public home for conversation, questions,
-                disagreement, stories, and ideas about the craft of making peace.
-            </p>
-
-            <a class="button"
-               href="https://www.reddit.com/r/Peacewright/"
-               rel="me noopener noreferrer">
-                Join the Peacewright conversation
-            </a>
-        </section>
-
-
-        <section class="open-project">
-            <h2>An Open Project</h2>
-
-            <p>
-                Peacewright is being built in the open.
-                Our ideas will grow, change, and improve as we learn.
-            </p>
-
-            <a class="button"
-               href="https://github.com/peacewright/peacewright"
-               rel="me noopener noreferrer">
-                Explore the project on GitHub
-            </a>
-        </section>
-
-
-        <section class="social" aria-labelledby="social-title">
-            <h2 id="social-title">Find Peacewright</h2>
-
-            <p>Follow the project wherever you spend your time.</p>
-
-            <ul class="social-links" aria-label="Peacewright social media">
-                <li><a href="https://www.reddit.com/r/Peacewright/" rel="me noopener noreferrer">Reddit</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=61593421799837" rel="me noopener noreferrer">Facebook</a></li>
-                <li><a href="https://www.instagram.com/peacewrightproject/" rel="me noopener noreferrer">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/company/143666035/" rel="me noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://www.youtube.com/@peacewright" rel="me noopener noreferrer">YouTube</a></li>
-                <li><a href="https://www.tiktok.com/@peacewrightproject" rel="me noopener noreferrer">TikTok</a></li>
-                <li><a href="https://bsky.app/profile/peacewright.bsky.social" rel="me noopener noreferrer">Bluesky</a></li>
-                <li><a href="https://x.com/peacewrightorg" rel="me noopener noreferrer">X</a></li>
-            </ul>
-        </section>
-
-    </main>
-
-
-    <footer>
-        <p>Peacewright™ — The craft of making peace.</p>
-    </footer>
-
+  <footer>
+    <div class="footer-identity">
+      <a class="brand" href="#top"><span>PEACEWRIGHT<sup>™</sup> PROJECT</span></a>
+      <p>The craft is learned by doing the work.</p>
+    </div>
+    <div class="footer-connections">
+      <section class="footer-community" aria-labelledby="footer-community-heading"><h2 id="footer-community-heading">CONTINUE THE CONVERSATION</h2><a href="https://www.reddit.com/r/Peacewright/" target="_blank" rel="noopener noreferrer">r/Peacewright →</a></section>
+      <nav class="footer-social" aria-labelledby="footer-social-heading"><h2 id="footer-social-heading">FIND US ELSEWHERE</h2><div class="footer-social-links">
+        <a href="https://youtube.com/@peacewright" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.facebook.com/profile.php?id=61593421799837" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://instagram.com/peacewrightproject" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://threads.com/@peacewrightproject" target="_blank" rel="noopener noreferrer">Threads</a><a href="https://tiktok.com/@peacewrightproject" target="_blank" rel="noopener noreferrer">TikTok</a><a href="https://bsky.app/profile/peacewright.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a><a href="https://x.com/peacewrightorg" target="_blank" rel="noopener noreferrer">X</a><a href="https://www.linkedin.com/company/143666035/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/peacewright/peacewright" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div></nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
