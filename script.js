@@ -83,10 +83,10 @@ scheduleNext();
 
 const toolCopy = document.querySelector('#tool-copy');
 const toolLink = document.querySelector('#tool-link');
-document.querySelectorAll('.tool').forEach((tool) => tool.addEventListener('click', () => {
+document.querySelectorAll('.tool[type="button"]').forEach((tool) => tool.addEventListener('click', () => {
   document.querySelectorAll('.tool').forEach((item) => {
     item.classList.remove('selected');
-    item.setAttribute('aria-pressed', 'false');
+    if (item.matches('button')) item.setAttribute('aria-pressed', 'false');
   });
   tool.classList.add('selected');
   tool.setAttribute('aria-pressed', 'true');
